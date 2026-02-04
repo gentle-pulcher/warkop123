@@ -5,15 +5,103 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="style.css" />
     <title>Account</title>
+    <style>
+        
+.account {
+  margin-top: 140px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.profile-icon {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.account-name {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.account-email {
+  color: #666;
+  font-size: 14px;
+}
+
+
+.account-card {
+  width: 320px;
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.account-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  font-size: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.account-row:last-child {
+  border-bottom: none;
+}
+
+.status.active {
+  color: #2ecc71;
+  font-weight: 600;
+}
+
+/* BUTTONS */
+.account-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.account-btn {
+  padding: 12px 22px;
+  background: #cf8e4e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.account-btn:hover {
+  background: #b8763d;
+}
+
+.account-btn.outline {
+  background: transparent;
+  border: 2px solid #cf8e4e;
+  color: #cf8e4e;
+}
+
+.account-btn.outline:hover {
+  background: red;
+  color: white;
+  border: 2px solid red;
+}
+
+    </style>
 </head>
 
 <body>
 
     <!-- NAVBAR -->
     <header class="navbar">
-        <a href="checkout.html">
-            <img src="icon.svg" alt="" id="carticon">
-        </a>
+        <a href="checkout.html"><img src="img/cart icon.png" alt="" id="carticon"></a>
 
         <a href="account.html">
             <img src="Landscape Illustration.jfif" alt="User Avatar" class="avatar">

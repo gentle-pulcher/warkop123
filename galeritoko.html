@@ -5,7 +5,62 @@
 <head>
   <meta charset="UTF-8">
   <title>Galeri Toko Tercinta</title>
+  <style>
+    .gallery-suasanа {
+  padding: 50px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
 
+.gallery-title {
+  font-size: 30px;
+  margin-bottom: 10px;
+  border: 20px;
+}
+
+.gallery-desc {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* GRID FOTO */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  height: 600px;
+  overflow-y: scroll;
+  padding-right: 10px;
+}
+
+.gallery-grid::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery-grid {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.gallery-card {
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.gallery-card img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.gallery-card:hover img {
+  transform: scale(1.1);
+}
+  </style>
 </head>
 
 <body>
@@ -14,14 +69,14 @@
 
 
   <header class="navbar">
-    <a href="checkout.html"><img src="icon.svg" alt="" id="carticon"></a>
+    <a href="checkout.html"><img src="img/cart icon.png" alt="" id="carticon"></a>
     <a href="account.html"><img src="Landscape Illustration.jfif" alt="User Avatar" class="avatar"></a>
     <nav>
 
       <ul class="nav-list">
         <li>
           <a href="index.html">Home</a> <a href="menu.html">Products</a>
-          <a href="galeritoko.html">Galeri</a>
+          <a href="galeritoko.html" class="active">Galeri</a>
           <a href="testimoni.html">Reviews</a> <a href="satrik.html">Tell Us</a>
           <a href="events.html">Events</a>
           <a href="about.html">About</a>
