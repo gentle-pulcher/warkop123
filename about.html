@@ -1,13 +1,68 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-     <header class="navbar">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .aboutwarung {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-align: left;
+      background-color: #f9f9f9;
+      padding: 40px;
+      gap: 30px;
+    }
+
+    .aboutwarung .text {
+      max-width: 60%;
+    }
+
+    .aboutimg img {
+      border-radius: 20px;
+      width: 300px;
+      transition: transform 0.3s ease;
+    }
+
+    .aboutimg img:hover {
+      transform: scale(1.05);
+    }
+
+    .historywarung {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #f0f0f0;
+      padding: 40px;
+      text-align: justify;
+      gap: 30px;
+
+      flex-direction: row-reverse;
+
+    }
+
+    .historywarung .text {
+      max-width: 60%;
+    }
+
+    .historyimg img {
+      border-radius: 20px;
+      width: auto;
+      height: 200px;
+      transition: transform 0.3s ease;
+    }
+
+    .historyimg img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body>
+  <header class="navbar">
     <a href="checkout.html"><img src="img/cart icon.png" alt="" id="carticon"></a>
     <a href="account.html"><img src="Landscape Illustration.jfif" alt="User Avatar" class="avatar"></a>
     <nav>
@@ -27,9 +82,35 @@
 
     </nav>
   </header>
-    <main>
-      <h3>dibuat oleh : Candra dan Hanif</h3>
-    </main>
-    <footer></footer>
-  </body>
+  <main>
+    <div class="aboutwarung">
+      <div class="text">
+        <h1>About Warung123</h1>
+        <p>
+          Warung123 is a cozy and affordable eatery located in the heart of the city.
+          We offer a variety of delicious local dishes made from fresh ingredients.
+          Our mission is to provide a comfortable dining experience for everyone.
+        </p>
+      </div>
+      <div class="aboutimg">
+        <img src="Landscape Illustration.jfif" alt="">
+      </div>
+    </div>
+    <div class="historywarung">
+      <div class="text">
+        <h1>Our history</h1>
+        <p>
+          Established in 2010, Warung123 has been serving the community for over a decade.
+          Founded by a group of food enthusiasts, our warung has grown from a small stall to a popular dining spot.
+          We take pride in our rich history and commitment to quality.
+      </div>
+      <div class="historyimg">
+        <img src="img/1.png" alt="">
+      </div>
+    </div>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+
 </html>

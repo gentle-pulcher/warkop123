@@ -7,59 +7,66 @@
   <title>Galeri Toko Tercinta</title>
   <style>
     .gallery-suasanа {
-  padding: 50px;
-  text-align: center;
-  position: relative;
-  z-index: 1;
-}
+      padding: 50px;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
 
-.gallery-title {
-  font-size: 30px;
-  margin-bottom: 10px;
-  border: 20px;
-}
+    .gallery-title {
+      font-size: 30px;
+      margin-bottom: 10px;
+      border: 20px;
+    }
 
-.gallery-desc {
-  color: #666;
-  margin-bottom: 30px;
-}
+    .gallery-desc {
+      color: #666;
+      margin-bottom: 30px;
+    }
 
-/* GRID FOTO */
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  height: 600px;
-  overflow-y: scroll;
-  padding-right: 10px;
-}
+    /* GRID FOTO */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      height: 600px;
+      overflow-y: scroll;
+      padding-right: 10px;
+    }
 
-.gallery-grid::-webkit-scrollbar {
-  display: none;
-}
+    .gallery-grid::-webkit-scrollbar {
+      display: none;
+    }
 
-.gallery-grid {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
+    .gallery-grid {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
 
-.gallery-card {
-  overflow: hidden;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
+    .gallery-card {
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
 
 
-.gallery-card img {
-  width: 100%;
-  aspect-ratio: 1;
-  object-fit: cover;
-  transition: transform 0.4s ease;
-}
+    .gallery-card img {
+      width: 100%;
+      aspect-ratio: 1;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
 
-.gallery-card:hover img {
-  transform: scale(1.1);
-}
+    .gallery-card:hover img {
+      transform: scale(1.1);
+    }
+
+    .page-content {
+      background-image: url(bg.png);
+      background-size: cover;
+      background-position: center;
+      min-height: 100vh;
+    }
   </style>
 </head>
 
@@ -89,36 +96,36 @@
     </nav>
   </header>
 
-
-  <div class="gallery-suasanа">
-    <h2 class="gallery-title">Suasana Warung</h2>
-    <p class="gallery-desc">
-      Beberapa potret suasana Warkop123 yang nyaman dan sederhana
-    </p>
-    <div class="gallery-grid">
-      <div class="gallery-card">
-        <img src="img/1.png" alt="Suasana Warung Pagi" />
-      </div>
-      <div class="gallery-card">
-        <img src="img/3.png" alt="Suasana Warung Siang" />
-      </div>
-      <div class="gallery-card">
-        <img src="img/4.png" alt="Suasana Warung Malam" />
-      </div>
-      <div class="gallery-card">
-        <img src="img/Amphibious_4K.png" alt="Area Tempat Duduk" />
-      </div>
-       <div class="gallery-card">
-        <img src="img/Amphibious_4K.png" alt="Area Tempat Duduk" />
-      </div>
-       <div class="gallery-card">
-        <img src="img/Amphibious_4K.png" alt="Area Tempat Duduk" />
+  <main class="page-content">
+    <div class="gallery-suasanа">
+      <h2 class="gallery-title">Suasana Warung</h2>
+      <p class="gallery-desc">
+        Beberapa potret suasana Warkop123 yang nyaman dan sederhana
+      </p>
+      <div class="gallery-grid">
+        <div class="gallery-card">
+          <img src="img/1.png" alt="Suasana Warung Pagi" />
+        </div>
+        <div class="gallery-card">
+          <img src="img/3.png" alt="Suasana Warung Siang" />
+        </div>
+        <div class="gallery-card">
+          <img src="img/4.png" alt="Suasana Warung Malam" />
+        </div>
+        <div class="gallery-card">
+          <img src="img/Amphibious_4K.png" alt="Area Tempat Duduk" />
+        </div>
+        <div class="gallery-card">
+          <img src="img/Amphibious_4K.png" alt="Area Tempat Duduk" />
+        </div>
+        <div class="gallery-card">
+          <img src="img/Amphibious_4K.png" alt="Area Tempat Duduk" />
+        </div>
       </div>
     </div>
-  </div>
-  </div>
-  </div>
-
+    </div>
+    </div>
+  </main>
 </body>
 
 </html>
