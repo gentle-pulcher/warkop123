@@ -1,158 +1,171 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <style>
-      .feedback-box {
-        width: 70vw;
-        height: 60vh;
-        margin: 60px auto;
-        padding: 25px;
 
-        background-color:#333;
-        border-radius: 12px;
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
-        color: white;
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .feedback-box {
+      width: 70vw;
+      height: 60vh;
+      margin: 60px auto;
+      padding: 25px;
 
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      }
+      background-color: #333;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+      color: white;
 
-      .feedback-box h2 {
-        text-align: center;
-        margin-bottom: 15px;
-      }
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
 
-      .feedback-box input,
-      .feedback-box textarea {
-        width: 100%;
-        padding: 12px 14px;
-        margin-bottom: 15px;
-        border-radius: 6px;
-        border: none;
-        outline: none;
-        background: #444;
-        color: white;
-        box-sizing: border-box;
-      }
+    .feedback-box h2 {
+      text-align: center;
+      margin-bottom: 15px;
+    }
 
-      .feedback-box textarea {
-        height: 220px;
-        resize: none;
-      }
+    .feedback-box input,
+    .feedback-box textarea {
+      width: 100%;
+      padding: 12px 14px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      border: none;
+      outline: none;
+      background: #444;
+      color: white;
+      box-sizing: border-box;
+    }
 
-      .feedback-box button {
-        width: 70%;
-        padding: 10px;
-        border: none;
-        border-radius: 6px;
-        background: #cf8e4e;
-        color: black;
-        font-weight: bold;
-        cursor: pointer;
-        margin: 0 auto;
-      }
+    .feedback-box textarea {
+      height: 220px;
+      resize: none;
+    }
 
-      .feedback-box button:hover {
-        background: #b8763d;
-      }
+    .feedback-box button {
+      width: 70%;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      background: #cf8e4e;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+      margin: 0 auto;
+    }
 
-      .feedback-box form {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        justify-content: space-between;
-      }
-      .rating {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: center;
-        gap: 24px; /* ← jarak antar bintang */
-        margin-bottom: 15px;
-      }
+    .feedback-box button:hover {
+      background: #b8763d;
+    }
 
-      .rating input {
-        display: none;
-      }
+    .feedback-box form {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: space-between;
+    }
 
-      .rating label {
-        font-size: 30px;
-        color: #555;
-        cursor: pointer;
-      }
+    .rating {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      gap: 24px;
+      /* ← jarak antar bintang */
+      margin-bottom: 15px;
+    }
 
-      .rating input:checked ~ label,
-      .rating label:hover,
-      .rating label:hover ~ label {
-        color: #cf8e4e;
-      }
-      .fields {
-        display: flex;
-        flex-direction: column;
-      }
-    </style>
-  </head>
+    .rating input {
+      display: none;
+    }
 
-  <body>
-    <header class="navbar">
-      <a href="checkout.html"
-        ><img src="img/cart icon.png" alt="" id="carticon"
-      /></a>
-      <a href="account.html"
-        ><img
-          src="Landscape Illustration.jfif"
-          alt="User Avatar"
-          class="avatar"
-      /></a>
-      <nav>
-        <ul class="nav-list">
-          <li>
-            <a href="index.html">Home</a> <a href="menu.html">Products</a>
-            <a href="galeritoko.html">Galeri</a>
-            <a href="testimoni.html">Reviews</a>
-            <a href="satrik.html" class="active">Tell Us</a>
-            <a href="events.html">Events</a>
-            <a href="about.html">About</a>
-            <a href="kontak.html">Contacts</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <div class="feedback-box">
-        <h2>Rating berapa nichh??</h2>
+    .rating label {
+      font-size: 30px;
+      color: #555;
+      cursor: pointer;
+    }
 
-        <form>
-          <div class="fields">
-            <input type="text" placeholder="Nama (opsional)"/>
+    .rating input:checked~label,
+    .rating label:hover,
+    .rating label:hover~label {
+      color: #cf8e4e;
+    }
 
-            <textarea placeholder="Tulis saran atau kritik kamu..."></textarea>
-          </div>
-          <div class="rating">
-            <input type="radio" name="star" id="star5" />
-            <label for="star5">★</label>
+    .fields {
+      display: flex;
+      flex-direction: column;
+    }
+    .foot {
+      text-align: center;
+      padding: 15px;
+      background-color: #222;
+      color: white;
+      margin-top: 40px;
+    }
+    .foot p {
+      margin: 0;
+      font-size: 14px;
 
-            <input type="radio" name="star" id="star4" />
-            <label for="star4">★</label>
+    }
+  </style>
+</head>
 
-            <input type="radio" name="star" id="star3" />
-            <label for="star3">★</label>
+<body>
+  <header class="navbar">
+    <a href="checkout.html"><img src="img/cart icon.png" alt="" id="carticon" /></a>
+    <a href="account.html"><img src="Landscape Illustration.jfif" alt="User Avatar" class="avatar" /></a>
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a href="index.html">Home</a> <a href="menu.html">Products</a>
+          <a href="galeritoko.html">Galeri</a>
+          <a href="testimoni.html">Reviews</a>
+          <a href="satrik.html" class="active">Tell Us</a>
+          <a href="events.html">Events</a>
+          <a href="about.html">About</a>
+          <a href="kontak.html">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="feedback-box">
+      <h2>Rating berapa nichh??</h2>
 
-            <input type="radio" name="star" id="star2" />
-            <label for="star2">★</label>
+      <form>
+        <div class="fields">
+          <input type="text" placeholder="Nama (opsional)" />
 
-            <input type="radio" name="star" id="star1" />
-            <label for="star1">★</label>
-          </div>
+          <textarea placeholder="Tulis saran atau kritik kamu..."></textarea>
+        </div>
+        <div class="rating">
+          <input type="radio" name="star" id="star5" />
+          <label for="star5">★</label>
 
-          <button type="submit">Kirim</button>
-        </form>
-      </div>
-    </main>
-    <footer></footer>
-  </body>
+          <input type="radio" name="star" id="star4" />
+          <label for="star4">★</label>
+
+          <input type="radio" name="star" id="star3" />
+          <label for="star3">★</label>
+
+          <input type="radio" name="star" id="star2" />
+          <label for="star2">★</label>
+
+          <input type="radio" name="star" id="star1" />
+          <label for="star1">★</label>
+        </div>
+
+        <button type="submit">Kirim</button>
+      </form>
+    </div>
+    <footer class="foot">
+      <p>&copy; 2024 Warung123. All rights reserved.</p>
+    </footer>
+  </main>
+  <footer></footer>
+</body>
+
 </html>

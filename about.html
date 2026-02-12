@@ -12,7 +12,7 @@
       align-items: center;
       justify-content: space-between;
       text-align: left;
-      background-color: #f9f9f9;
+      background-color: transparent;
       padding: 40px;
       gap: 30px;
     }
@@ -35,11 +35,11 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      background-color: #f0f0f0;
+      background-color: transparent;
       padding: 40px;
       text-align: justify;
       gap: 30px;
-
+      box-sizing: border-box;
       flex-direction: row-reverse;
 
     }
@@ -57,6 +57,25 @@
 
     .historyimg img:hover {
       transform: scale(1.05);
+    }
+
+    .foot {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+
+    .foot p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    .page-sect {
+      background-image: url(bg.png);
+      background-size: cover;
+      background-position: center;
     }
   </style>
 </head>
@@ -82,7 +101,7 @@
 
     </nav>
   </header>
-  <main>
+  <main class="page-sect">
     <div class="aboutwarung">
       <div class="text">
         <h1>About Warung123</h1>
@@ -109,8 +128,11 @@
       </div>
     </div>
     </section>
+    <footer class="foot">
+      <p>&copy; 2024 Warung123. All rights reserved.</p>
+    </footer>
   </main>
-  <footer></footer>
+
 </body>
 
 </html>

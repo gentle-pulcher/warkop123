@@ -1,13 +1,119 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-     <header class="navbar">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #f5f5f5, #e0e0e0);
+    }
+
+    .contact-container {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .contact-container h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      color: gray;
+      margin-bottom: 40px;
+    }
+
+    .contact-content {
+      display: flex;
+      gap: 40px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .contact-info {
+      flex: 1;
+      min-width: 250px;
+      text-align: left;
+    }
+
+    .contact-info h2 {
+      margin-bottom: 20px;
+    }
+
+    .contact-info p {
+      margin: 10px 0;
+      font-size: 16px;
+    }
+
+    .contact-form {
+      flex: 1;
+      min-width: 250px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      outline: none;
+      border-color: #8b4513;
+    }
+
+    .contact-form button {
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      background-color: #8b4513;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .contact-form button:hover {
+      background-color: #5c2e0f;
+    }
+
+    .foot {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+
+    .foot p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url(bg.png);
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="navbar">
     <a href="checkout.html"><img src="img/cart icon.png" alt="" id="carticon"></a>
     <a href="account.html"><img src="Landscape Illustration.jfif" alt="User Avatar" class="avatar"></a>
     <nav>
@@ -20,12 +126,39 @@
           <a href="events.html">Events</a>
           <a href="about.html">About</a>
           <a href="kontak.html" class="active">Contacts</a>
-
         </li>
       </ul>
-
-
     </nav>
   </header>
-  </body>
+  <main>
+    <section class="contact-container">
+      <h1>Contact Us</h1>
+      <p class="subtitle">Have questions? We'd love to hear from you.</p>
+
+      <div class="contact-content">
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <h2>Get In Touch</h2>
+          <p>📍 Jl. Kopi Nikmat No. 123</p>
+          <p>📞 +62 812-3456-7890</p>
+          <p>📧 warkop123@email.com</p>
+          <p>🕒 Open Everyday 08:00 - 22:00</p>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+<footer class="foot">
+  <p>&copy; 2024 Warung123. All rights reserved.</p>
+</footer>
+
 </html>
