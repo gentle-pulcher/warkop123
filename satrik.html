@@ -14,10 +14,11 @@
     }
     
     .feedback-box {
-      width: 70vw;
+      width: 50vw;
       height: 60vh;
       margin: 60px auto;
       padding: 25px;
+      padding-top: 50px;
 
       background-color:white;
       border-radius: 12px;
@@ -68,6 +69,7 @@
       font-weight: bold;
       cursor: pointer;
       margin: 0 auto;
+      margin-bottom: 50px;
     }
 
     .feedback-box button:hover {
@@ -110,13 +112,20 @@
       display: flex;
       flex-direction: column;
     }
+
+    .feedback-form{
+      flex: 1;
+      min-width: 250px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
     
   </style>
 </head>
 
 <body>
   <header class="navbar">
-    <a href="checkout.html"><img src="img/cart icon.png" alt="" id="carticon" /></a>
     <a href="account.html"><img src="Landscape Illustration.jfif" alt="User Avatar" class="avatar" /></a>
     <nav>
       <ul class="nav-list">
@@ -133,10 +142,10 @@
     </nav>
   </header>
   <main>
-    <div class="feedback-box">
+    <div class="feedback-box">  
       <h2>Rating berapa nichh??</h2>
 
-      <form>
+      <form class="feedback-form">
         <div class="fields">
           <input type="text" placeholder="Nama (opsional)" />
 
