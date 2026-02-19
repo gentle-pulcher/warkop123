@@ -7,16 +7,22 @@
   <title>Document</title>
   <link rel="stylesheet" href="style.css" />
   <style>
+    body{
+      background-image: url(bg.png);
+      background-size: cover;
+      background-position: center;
+    }
+    
     .feedback-box {
       width: 70vw;
       height: 60vh;
       margin: 60px auto;
       padding: 25px;
 
-      background-color: #333;
+      background-color:white;
       border-radius: 12px;
       box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
-      color: white;
+      color: black;
 
       display: flex;
       flex-direction: column;
@@ -36,9 +42,15 @@
       border-radius: 6px;
       border: none;
       outline: none;
-      background: #444;
-      color: white;
+      background:rgba(200, 200, 200, 0.4);
+      color: black;
       box-sizing: border-box;
+    }
+
+    .feedback-box input:focus,
+    .feedback-box textarea:focus{
+      outline: none;
+      border-color: #cf8e4e;
     }
 
     .feedback-box textarea {
@@ -52,7 +64,7 @@
       border: none;
       border-radius: 6px;
       background: #cf8e4e;
-      color: black;
+      color: white;
       font-weight: bold;
       cursor: pointer;
       margin: 0 auto;
@@ -98,18 +110,7 @@
       display: flex;
       flex-direction: column;
     }
-    .foot {
-      text-align: center;
-      padding: 15px;
-      background-color: #222;
-      color: white;
-      margin-top: 40px;
-    }
-    .foot p {
-      margin: 0;
-      font-size: 14px;
-
-    }
+    
   </style>
 </head>
 

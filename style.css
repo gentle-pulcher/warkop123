@@ -1,3 +1,9 @@
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #f5f5f5, #e0e0e0);
+    }
+
 nav ul {
   list-style-type: none;
   display: flex;
@@ -85,3 +91,16 @@ body {
 .page-content {
   flex: 1;
 }
+
+.foot {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+
+    .foot p {
+      margin: 0;
+      font-size: 14px;
+    }
