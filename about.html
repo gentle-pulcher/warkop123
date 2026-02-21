@@ -7,65 +7,55 @@
   <title>Document</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    .aboutwarung {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      text-align: left;
-      background-color: transparent;
-      padding: 40px;
-      gap: 30px;
-    }
+.page-content {
+  background-image: url(bg.png);
+  background-size: cover;
+  background-position: center;
 
-    .aboutwarung .text {
-      max-width: 60%;
-    }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-    .aboutimg img {
-      border-radius: 20px;
-      width: 300px;
-      transition: transform 0.3s ease;
-    }
 
-    .aboutimg img:hover {
-      transform: scale(1.05);
-    }
+.aboutwarung,
+.historywarung {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-    .historywarung {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      background-color: transparent;
-      padding: 40px;
-      text-align: justify;
-      gap: 30px;
-      box-sizing: border-box;
-      flex-direction: row-reverse;
+  width: 100%;
+  max-width: 1100px;
+  padding: 80px 40px;
+  gap: 60px;
+}
 
-    }
 
-    .historywarung .text {
-      max-width: 60%;
-    }
+.historywarung {
+  flex-direction: row-reverse;
+}
 
-    .historyimg img {
-      border-radius: 20px;
-      width: auto;
-      height: 200px;
-      transition: transform 0.3s ease;
-    }
 
-    .historyimg img:hover {
-      transform: scale(1.05);
-    }
+.text {
+  flex: 1;
+  text-align: left;
+}
 
-    
 
-    .page-sect {
-      background-image: url(bg.png);
-      background-size: cover;
-      background-position: center;
-    }
+.aboutimg img,
+.historyimg img {
+  width: 320px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.aboutimg img:hover,
+.historyimg img:hover {
+  transform: scale(1.05);
+}
+
   </style>
 </head>
 
@@ -76,7 +66,7 @@
 
       <ul class="nav-list">
         <li>
-          <a href="index.html">Home</a> <a href="menu.html">Products</a>
+          <a href="index.html">Home</a> <a href="menu.html">Menu</a>
           <a href="galeritoko.html">Galeri</a>
           <a href="testimoni.html">Reviews</a> <a href="satrik.html">Tell Us</a>
           <a href="events.html">Events</a>
@@ -89,7 +79,7 @@
 
     </nav>
   </header>
-  <main class="page-sect">
+  <main class="page-content">
     <div class="aboutwarung">
       <div class="text">
         <h1>About Warung123</h1>
@@ -112,15 +102,13 @@
           We take pride in our rich history and commitment to quality.
       </div>
       <div class="historyimg">
-        <img src="img/1.png" alt="">
+        <img src="Landscape Illustration.jfif" alt="">
       </div>
     </div>
-    </section>
-    <footer class="foot">
-      <p>&copy; 2024 Warung123. All rights reserved.</p>
-    </footer>
   </main>
-
+  <footer class="foot">
+    <p>&copy; 2024 Warung123. All rights reserved.</p>
+  </footer>
 </body>
 
 </html>

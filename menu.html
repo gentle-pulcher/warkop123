@@ -3,14 +3,14 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>Produk - Warung123</title>
+  <title>Menu - Warkop123</title>
   <link rel="stylesheet" href="style.css" />
   <style>
     .product-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;
-      max-width: 900px;
+      max-width: 1000px;
       margin: 0 auto;
       padding: 30px;
     }
@@ -20,22 +20,18 @@
       border-radius: 12px;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
       overflow: hidden;
-      transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
-      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .product-card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     }
 
     .product-image {
       width: 100%;
-      height: 200px;
+      height: 300px;
       object-fit: cover;
-      display: block;
     }
 
     .product-info {
@@ -45,22 +41,14 @@
     .product-name {
       font-size: 18px;
       font-weight: 600;
-      margin: 0 0 8px 0;
-      color: #333;
-    }
-
-    .product-description {
-      font-size: 14px;
-      color: #666;
-      margin: 0 0 10px 0;
-      line-height: 1.4;
+      margin-bottom: 5px;
     }
 
     .product-price {
-      font-size: 20px;
-      font-weight: 700;
+      font-size: 18px;
+      font-weight: bold;
       color: #cf8e4e;
-      margin: 10px 0;
+      margin-bottom: 10px;
     }
 
     .product-button {
@@ -70,31 +58,24 @@
       color: white;
       border: none;
       border-radius: 6px;
-      font-size: 16px;
+      font-size: 15px;
       font-weight: 600;
       cursor: pointer;
-      transition: background-color 0.3s ease;
       text-decoration: none;
-      box-sizing: border-box;
       display: block;
       text-align: center;
+      transition: background-color 0.3s ease;
     }
 
     .product-button:hover {
       background-color: #a8642f;
     }
 
-    .makan-minum {
-      text-align: center;
-      margin-top: 40px;
-      font-size: 28px;
-      color: #333;
-    }
-
     .section-header {
-      font-size: 30px;
-      margin-bottom: 10px;
       text-align: center;
+      font-size: 30px;
+      margin-top: 40px;
+      margin-bottom: 10px;
     }
 
     .page-content {
@@ -104,19 +85,19 @@
       min-height: 100vh;
       padding-top: 80px;
     }
-
-    
   </style>
 </head>
 
 <body>
   <header class="navbar">
-    <a href="account.html"><img src="Landscape Illustration.jfif" alt="User Avatar" class="avatar" /></a>
+    <a href="account.html">
+      <img src="Landscape Illustration.jfif" alt="User Avatar" class="avatar" />
+    </a>
     <nav>
       <ul class="nav-list">
         <li>
           <a href="index.html">Home</a>
-          <a href="menu.html" class="active">Products</a>
+          <a href="menu.html" class="active">Menu</a>
           <a href="galeritoko.html">Galeri</a>
           <a href="testimoni.html">Reviews</a>
           <a href="satrik.html">Tell Us</a>
@@ -127,117 +108,105 @@
       </ul>
     </nav>
   </header>
+
   <main class="page-content">
-    <div class="container">
-      <h2 class="section-header">Makanan</h2>
-      <div class="product-grid">
-        <div class="product-card">
-          <img src="img/nasgor.jpg" alt="Nasi Goreng" class="product-image" />
 
-          <div class="product-info">
-            <h4 class="product-name">Nasi Goreng Spesial</h4>
-            <div class="product-price">Rp15.000</div>
-          </div>
+    <h2 class="section-header">🍽 Makanan</h2>
+    <div class="product-grid">
 
-          <a href="checkout.html" class="product-button">Beli sekarang!</a>
+      <div class="product-card">
+        <img src="img/nasgor.jpg" class="product-image" />
+        <div class="product-info">
+          <h4 class="product-name">Nasi Goreng Kampung</h4>
+          <div class="product-price">Rp18.000</div>
         </div>
-        <div class="product-card">
-          <img src="img/miegoreng.jpg" alt="Mie Goreng" class="product-image" />
-
-          <div class="product-info">
-            <h4 class="product-name">Mie Goreng</h4>
-            <div class="product-price">Rp12.000</div>
-          </div>
-
-          <a href="checkout.html" class="product-button">Beli sekarang!</a>
-        </div>
-        <div class="product-card">
-          <img src="img/soto.jpg" alt="Soto Ayam" class="product-image" />
-
-          <div class="product-info">
-            <h4 class="product-name">Soto Ayam</h4>
-            <div class="product-price">Rp10.000</div>
-          </div>
-
-          <a href="checkout.html" class="product-button">Lihat Detail</a>
-        </div>
-
-        <div class="product-card">
-          <img src="img/soto.jpg" alt="Soto Ayam" class="product-image" />
-
-          <div class="product-info">
-            <h4 class="product-name">Soto Ayam</h4>
-            <div class="product-price">Rp10.000</div>
-          </div>
-
-          <a href="checkout.html" class="product-button">Lihat Detail</a>
-        </div>
-
-        <div class="product-card">
-          <img src="img/soto.jpg" alt="Soto Ayam" class="product-image" />
-
-          <div class="product-info">
-            <h4 class="product-name">Soto Ayam</h4>
-            <div class="product-price">Rp10.000</div>
-          </div>
-
-          <a href="checkout.html" class="product-button">Beli sekarang!</a>
-        </div>
-
-        <div class="product-card">
-          <img src="img/soto.jpg" alt="Soto Ayam" class="product-image" />
-
-          <div class="product-info">
-            <h4 class="product-name">Soto Ayam</h4>
-            <div class="product-price">Rp10.000</div>
-          </div>
-
-          <a href="checkout.html" class="product-button">Beli sekarang!</a>
-        </div>
+        <a href="kontak.html" class="product-button">Reservasi / Datang</a>
       </div>
 
-      <h2 class="section-header">Minuman</h2>
-      <div class="product-grid">
-        <div class="product-card">
-          <img src="img/nasgor.jpg" alt="Nasi Goreng" class="product-image" />
-
-          <div class="product-info">
-            <h4 class="product-name">Nasi Goreng Spesial</h4>
-            <div class="product-price">Rp15.000</div>
-          </div>
-
-          <a href="checkout.html" class="product-button">Beli sekarang!</a>
+      <div class="product-card">
+        <img src="img/migor.jpg" class="product-image" />
+        <div class="product-info">
+          <h4 class="product-name">Mie Goreng Jawa</h4>
+          <div class="product-price">Rp15.000</div>
         </div>
-
-        <div class="product-card">
-          <img src="img/nasgor.jpg" alt="Nasi Goreng" class="product-image" />
-
-          <div class="product-info">
-            <h4 class="product-name">Nasi Goreng Spesial</h4>
-            <div class="product-price">Rp15.000</div>
-          </div>
-
-          <a href="checkout.html" class="product-button">Beli sekarang!</a>
-        </div>
-
-        <div class="product-card">
-          <img src="img/nasgor.jpg" alt="Nasi Goreng" class="product-image" />
-
-          <div class="product-info">
-            <h4 class="product-name">Nasi Goreng Spesial</h4>
-            <div class="product-price">Rp15.000</div>
-          </div>
-
-          <a href="checkout.html" class="product-button">Beli sekarang!</a>
-        </div>
+        <a href="kontak.html" class="product-button">Reservasi / Datang</a>
       </div>
+
+      <div class="product-card">
+        <img src="img/soto.jpg" class="product-image" />
+        <div class="product-info">
+          <h4 class="product-name">Soto Ayam Lamongan</h4>
+          <div class="product-price">Rp14.000</div>
+        </div>
+        <a href="kontak.html" class="product-button">Reservasi / Datang</a>
+      </div>
+
+      <div class="product-card">
+        <img src="img/ayamgeprek.jpg" class="product-image" />
+        <div class="product-info">
+          <h4 class="product-name">Ayam Geprek Sambal Ijo</h4>
+          <div class="product-price">Rp20.000</div>
+        </div>
+        <a href="kontak.html" class="product-button">Reservasi / Datang</a>
+      </div>
+
+      <div class="product-card">
+        <img src="img/satepadang.jpg" class="product-image" />
+        <div class="product-info">
+          <h4 class="product-name">Sate Padang</h4>
+          <div class="product-price">Rp10.000</div>
+        </div>
+        <a href="kontak.html" class="product-button">Reservasi / Datang</a>
+      </div>
+
+      <div class="product-card">
+        <img src="img/indomie.jpg" class="product-image" />
+        <div class="product-info">
+          <h4 class="product-name">Indomie Rebus Spesial</h4>
+          <div class="product-price">Rp13.000</div>
+        </div>
+        <a href="kontak.html" class="product-button">Reservasi / Datang</a>
+      </div>
+
+    </div>
+
+    <h2 class="section-header">🥤 Minuman</h2>
+    <div class="product-grid">
+
+      <div class="product-card">
+        <img src="img/esteh.jpg" class="product-image" />
+        <div class="product-info">
+          <h4 class="product-name">Es Teh Manis</h4>
+          <div class="product-price">Rp5.000</div>
+        </div>
+        <a href="kontak.html" class="product-button">Reservasi / Datang</a>
+      </div>
+
+      <div class="product-card">
+        <img src="img/kopi.jpg" class="product-image" />
+        <div class="product-info">
+          <h4 class="product-name">Kopi Hitam</h4>
+          <div class="product-price">Rp7.000</div>
+        </div>
+        <a href="kontak.html" class="product-button">Reservasi / Datang</a>
+      </div>
+
+      <div class="product-card">
+        <img src="img/kopisusu.jpg" class="product-image" />
+        <div class="product-info">
+          <h4 class="product-name">Kopi Susu Gula Aren</h4>
+          <div class="product-price">Rp12.000</div>
+        </div>
+        <a href="kontak.html" class="product-button">Reservasi / Datang</a>
+      </div>
+
     </div>
     <footer class="foot">
       <p>&copy; 2024 Warung123. All rights reserved.</p>
     </footer>
+
   </main>
 
 </body>
-
 
 </html>
